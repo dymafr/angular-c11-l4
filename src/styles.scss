@@ -127,6 +127,10 @@ body {
   font-weight: 500;
 }
 
+.active {
+  background-color: var(--secondary);
+}
+
 .list-primary {
   li {
     padding: 10px 15px;
