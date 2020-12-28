@@ -8,11 +8,13 @@ import { CocktailListComponent } from "./cocktail-container/cocktail-list/cockta
 import { CocktailDetailsComponent } from "./cocktail-container/cocktail-details/cocktail-details.component";
 import { CocktailContainerComponent } from "./cocktail-container/cocktail-container.component";
 import { SelectedDirective } from "./shared/directives/selected.directive";
-import { PanierContainerComponent } from './panier-container/panier-container.component';
-import { IngredientListComponent } from './panier-container/ingredient-list/ingredient-list.component';
+import { PanierContainerComponent } from "./panier-container/panier-container.component";
+import { IngredientListComponent } from "./panier-container/ingredient-list/ingredient-list.component";
+import { RouterModule } from "@angular/router";
+import { APP_ROUTES } from "./app.routes";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(APP_ROUTES)],
   declarations: [
     AppComponent,
     HeaderComponent,
